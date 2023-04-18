@@ -281,7 +281,7 @@ const RecipeDetailsComponent = (props: any) => {
                     width: 20,
                     height: '100%',
                     backgroundColor: '#eee',
-                  }}></div>
+                  }} />
               </div>
               <Col className="col-12 col-md-7 ps-md-4 ">
                 <h3 className="noselect col-12 mt-5">Instructions</h3>

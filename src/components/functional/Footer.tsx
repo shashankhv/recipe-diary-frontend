@@ -34,23 +34,23 @@ const Footer = () => {
               <a
                 className="noselect me-1 btn btn-social-icon btn-facebook"
                 href="http://www.facebook.com/profile.php?id=">
-                <i className="noselect fa fa-facebook"></i>
+                <i className="noselect fa fa-facebook" />
               </a>
               <a
                 className="noselect me-1 btn btn-social-icon btn-linkedin"
                 href="http://www.linkedin.com/in/">
-                <i className="noselect fa fa-linkedin"></i>
+                <i className="noselect fa fa-linkedin" />
               </a>
               <a
                 className="noselect me-1 btn btn-social-icon btn-twitter"
                 href="http://twitter.com/">
-                <i className="noselect fa fa-twitter"></i>
+                <i className="noselect fa fa-twitter" />
               </a>
 
               <a
                 className="noselect me-1 btn btn-social-icon btn-instagram"
                 href="mailto:">
-                <i className="noselect fa fa-instagram"></i>
+                <i className="noselect fa fa-instagram" />
               </a>
             </div>
           </div>

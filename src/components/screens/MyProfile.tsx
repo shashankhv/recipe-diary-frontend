@@ -258,7 +258,7 @@ const MyProfileComponent = (props: any) => {
   if (
     user &&
     user.favorites !== {} &&
-    user.favorites.hasOwnProperty('recipes')
+    Object.prototype.hasOwnProperty.call(user.favorites, 'recipes')
   ) {
     var favRecipeList = user.favorites.recipes;
     localFavRecipes =

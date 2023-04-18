@@ -92,7 +92,7 @@ const RecipeDetailsComponent = (props: any) => {
     if (
       user &&
       user.favorites !== {} &&
-      user.favorites.hasOwnProperty('recipes')
+      Object.prototype.hasOwnProperty.call(user.favorites, 'recipes')
     ) {
       const favoriteRecipes = user.favorites.recipes;
       localRecipeDetails = {

@@ -43,7 +43,7 @@ const MyProfileComponent = (props: any) => {
   const {recipeState, userState} = state;
   const {user} = userState;
   const navigate = useNavigate();
-  console.log('USER', user);
+  
   const [activeTab, updateActiveTab] = useState(
     user && user.admin == true ? 0 : 1,
   );

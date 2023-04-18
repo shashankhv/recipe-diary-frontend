@@ -93,7 +93,8 @@ const AddRecipeComponent = () => {
         <div className="noselect col-12 col-sm-9 col-md-7 col-xl-5 m-2">
           <div
             className="col-12  p-4"
-            style={isTabletOrMobile ? {} : {border: '1px solid #eee'}}>
+            style={isTabletOrMobile ? {} : {border: '1px solid #eee'}}
+          >
             <div className=" mx-5 d-flex flex-column align-items-center">
               <img
                 className="noselect m-auto"
@@ -118,13 +119,15 @@ const AddRecipeComponent = () => {
                     flexDirection: 'row',
                     justifyContent: 'space-between',
                     alignItems: 'center',
-                  }}>
+                  }}
+                >
                   <span style={{fontSize: 14, color: '#c41400'}}>
                     Incorrect username or password
                   </span>
                   <i
                     className="fa fa-close "
-                    onClick={() => updateErrorVisible(false)}></i>
+                    onClick={() => updateErrorVisible(false)}
+                  ></i>
                 </div>
               )}
               <Form>
@@ -237,7 +240,8 @@ const AddRecipeComponent = () => {
                         ...formValues,
                         course: target.value,
                       });
-                    }}>
+                    }}
+                  >
                     <option>Appetizers</option>
                     <option defaultChecked>Main Course</option>
                     <option>Fish</option>
@@ -478,7 +482,8 @@ const AddRecipeComponent = () => {
                       border: '0.3px solid #aaa',
                       borderRadius: 2,
                       padding: 10,
-                    }}>
+                    }}
+                  >
                     {ingredients.map(ingredient => {
                       return (
                         <p
@@ -486,7 +491,8 @@ const AddRecipeComponent = () => {
                             fontSize: 12,
                             color: '#666',
                             marginBottom: 3,
-                          }}>
+                          }}
+                        >
                           {ingredient}
                         </p>
                       );
@@ -550,7 +556,8 @@ const AddRecipeComponent = () => {
                       border: '0.3px solid #aaa',
                       borderRadius: 2,
                       padding: 10,
-                    }}>
+                    }}
+                  >
                     {instructions.map((instruction: any, index: number) => {
                       return (
                         <p
@@ -558,7 +565,8 @@ const AddRecipeComponent = () => {
                             fontSize: 12,
                             color: '#666',
                             marginBottom: 3,
-                          }}>
+                          }}
+                        >
                           {instruction &&
                             instruction.length > 0 &&
                             `${index + 1}. ${instruction} `}
@@ -654,7 +662,8 @@ const AddRecipeComponent = () => {
                             }
                           });
                       }
-                    }}>
+                    }}
+                  >
                     {isAddingRecipe ? (
                       <div>
                         <Spinner size="sm" />
@@ -669,7 +678,8 @@ const AddRecipeComponent = () => {
                     style={{marginLeft: 10}}
                     onClick={() => {
                       navigate(-1);
-                    }}>
+                    }}
+                  >
                     Do it later
                   </Button>
                 </Col>

@@ -198,11 +198,13 @@ const MainRouter = () => {
           style={{
             paddingTop: 50,
           }}
-          isOpen={isModalOpen}>
+          isOpen={isModalOpen}
+        >
           <ModalHeader
             className="noselect"
             charCode="Y"
-            toggle={() => toggleModal()}>
+            toggle={() => toggleModal()}
+          >
             Access denied!
           </ModalHeader>
           <ModalBody className="noselect">
@@ -218,7 +220,8 @@ const MainRouter = () => {
               onClick={() => {
                 toggleModal();
                 navigate('/auth/signin');
-              }}>
+              }}
+            >
               Do it now
             </Button>
             <Button onClick={() => toggleModal()}>Do it later</Button>

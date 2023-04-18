@@ -223,7 +223,8 @@ const MyProfileComponent = (props: any) => {
               {recipes.map((recipe: RecipeListElement, index: number) => (
                 <div
                   key={index}
-                  className={"col-12  col-md-6 col-lg-6 col-xl-4 mb-5 px-3 "}>
+                  className={'col-12  col-md-6 col-lg-6 col-xl-4 mb-5 px-3 '}
+                >
                   <Generic.RecipeCard
                     data={recipe}
                     index={index}
@@ -238,7 +239,8 @@ const MyProfileComponent = (props: any) => {
         response = (
           <div
             className="noselect  col-12  d-flex flex-row flex-wrap pt-5 pe-3"
-            style={{marginBottom: isTabletOrMobile ? 500 : 600}}>
+            style={{marginBottom: isTabletOrMobile ? 500 : 600}}
+          >
             <span className="col-12 text-center">
               {`No ${recipeType} recipes`}
             </span>
@@ -313,7 +315,8 @@ const MyProfileComponent = (props: any) => {
             <div className="noselect  col-12 col-md-4 col-xl-3 border-end  px-5 bg-white ">
               <div
                 className="d-flex flex-column align-items-center pt-5"
-                style={{marginBottom: isTabletOrMobile ? 30 : 600}}>
+                style={{marginBottom: isTabletOrMobile ? 30 : 600}}
+              >
                 <div
                   className=""
                   style={{
@@ -325,7 +328,8 @@ const MyProfileComponent = (props: any) => {
                     display: 'flex',
                     justifyContent: 'center',
                     alignItems: 'center',
-                  }}>
+                  }}
+                >
                   <Avatar
                     className=""
                     style={{fontSize: 50, color: 'white'}}
@@ -336,7 +340,8 @@ const MyProfileComponent = (props: any) => {
                   style={{
                     padding: 10,
                     overflowWrap: 'break-word',
-                  }}>{`${user.firstname} ${user.lastname}`}</h4>
+                  }}
+                >{`${user.firstname} ${user.lastname}`}</h4>
                 {/* For v2 */}
                 {/* <Button
                   className="col-12 mb-5"
@@ -402,7 +407,8 @@ const MyProfileComponent = (props: any) => {
                           className={classnames({active: activeTab === index})}
                           onClick={() => {
                             updateActiveTab(index);
-                          }}>
+                          }}
+                        >
                           <span className="px-3">{tab}</span>
                         </NavLink>
                       </NavItem>
@@ -417,7 +423,8 @@ const MyProfileComponent = (props: any) => {
                       <Button
                         color="success"
                         className="ms-3 ps-3 pe-3"
-                        onClick={() => navigate('/main/my-profile/new')}>
+                        onClick={() => navigate('/main/my-profile/new')}
+                      >
                         + New Recipe
                       </Button>
                     </Col>

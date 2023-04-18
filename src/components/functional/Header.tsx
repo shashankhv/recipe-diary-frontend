@@ -96,10 +96,12 @@ const Header = ({modalCallback}: any) => {
           />
           <NavbarBrand
             className="noselect col-8 col-sm-3 m-sm-0 p-sm-0"
-            href="/">
+            href="/"
+          >
             <div
               className="noselect d-flex flex-row align-items-center"
-              style={{marginLeft: 12}}>
+              style={{marginLeft: 12}}
+            >
               <img
                 className="noselect col-auto"
                 src={icons.app_logo}
@@ -116,14 +118,16 @@ const Header = ({modalCallback}: any) => {
           <Collapse
             className="noselect col-sm-7  flex-row justify-content-between "
             isOpen={isNavOpen}
-            navbar>
+            navbar
+          >
             {/* Navigation */}
             <Nav navbar className={isTabletOrMobile ? 'offset-0' : 'offset-2'}>
               <NavItem className="noselect ms-sm-4 ">
                 <NavLink
                   tag={RRNavLink}
                   className={'nav-link '}
-                  to="/main/home">
+                  to="/main/home"
+                >
                   <strong>Home</strong>
                 </NavLink>
               </NavItem>
@@ -131,7 +135,8 @@ const Header = ({modalCallback}: any) => {
                 <NavLink
                   tag={RRNavLink}
                   className={'nav-link '}
-                  to="/main/recipes">
+                  to="/main/recipes"
+                >
                   <strong>Recipes</strong>
                 </NavLink>
               </NavItem>
@@ -140,7 +145,8 @@ const Header = ({modalCallback}: any) => {
                 <div
                   {...myStuffNavItemStyle}
                   className="noselect mt-2  mb-3 mb-sm-2 ms-sm-4 "
-                  onClick={() => modalCallback()}>
+                  onClick={() => modalCallback()}
+                >
                   <i className="noselect fa fa-lock me-1" />
                   <strong style={{cursor: 'pointer'}}>My Profile</strong>
                 </div>
@@ -150,7 +156,8 @@ const Header = ({modalCallback}: any) => {
                   <NavLink
                     tag={RRNavLink}
                     className={'nav-link '}
-                    to="/main/my-profile">
+                    to="/main/my-profile"
+                  >
                     <strong>My Profile</strong>
                   </NavLink>
                 </NavItem>
@@ -171,7 +178,8 @@ const Header = ({modalCallback}: any) => {
                   isOpen={isDropdownOpen}
                   toggle={() => {
                     updateDropdown(!isDropdownOpen);
-                  }}>
+                  }}
+                >
                   <DropdownToggle
                     style={{
                       backgroundColor: avatarColor,
@@ -179,7 +187,8 @@ const Header = ({modalCallback}: any) => {
                       height: 40,
                       width: 40,
                       padding: 0,
-                    }}>
+                    }}
+                  >
                     <Avatar size={'md'} name={user.fullname} />
                   </DropdownToggle>
 
@@ -193,7 +202,8 @@ const Header = ({modalCallback}: any) => {
                         display: 'flex',
                         justifyContent: 'space-between',
                         alignItems: 'center',
-                      }}>
+                      }}
+                    >
                       <span> My Profile </span>
                       {myProfileDropdown ? (
                         <i className="fa fa-chevron-down " />
@@ -212,7 +222,8 @@ const Header = ({modalCallback}: any) => {
                               navigate('/main/my-profile/', {
                                 state: {tab: 0},
                               });
-                            }}>
+                            }}
+                          >
                             My Recipes
                           </DropdownItem>
                         )}
@@ -221,7 +232,8 @@ const Header = ({modalCallback}: any) => {
                             navigate('/main/my-profile/', {
                               state: {tab: 1},
                             });
-                          }}>
+                          }}
+                        >
                           Recent Viewed
                         </DropdownItem>
                         <DropdownItem
@@ -229,7 +241,8 @@ const Header = ({modalCallback}: any) => {
                             navigate('/main/my-profile/', {
                               state: {tab: 2},
                             });
-                          }}>
+                          }}
+                        >
                           Saved Recipes
                         </DropdownItem>
                       </div>
@@ -240,7 +253,8 @@ const Header = ({modalCallback}: any) => {
                         localStorage.setItem('token', '');
 
                         dispatch(removeUser());
-                      }}>
+                      }}
+                    >
                       Logout
                     </DropdownItem>
                   </DropdownMenu>
@@ -253,8 +267,9 @@ const Header = ({modalCallback}: any) => {
                       // dispatch(loadUser(null));
                       navigate('/auth/signin');
                     }}
-                    {...signInButtonStyle}>
-                    <span className="noselect">{" Sign In"}</span>
+                    {...signInButtonStyle}
+                  >
+                    <span className="noselect">{' Sign In'}</span>
                   </Button>
                 </NavItem>
               )}

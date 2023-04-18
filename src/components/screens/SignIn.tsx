@@ -129,7 +129,8 @@ const SignInComponent = () => {
         <div className="noselect col-12 col-sm-9 col-md-7 col-xl-5 m-2">
           <div
             className="col-12  p-4"
-            style={isTabletOrMobile ? {} : {border: '1px solid #eee'}}>
+            style={isTabletOrMobile ? {} : {border: '1px solid #eee'}}
+          >
             <div className=" mx-5 d-flex flex-column align-items-center">
               <img
                 className="noselect m-auto"
@@ -154,13 +155,15 @@ const SignInComponent = () => {
                     flexDirection: 'row',
                     justifyContent: 'space-between',
                     alignItems: 'center',
-                  }}>
+                  }}
+                >
                   <span style={{fontSize: 14, color: '#c41400'}}>
                     Incorrect username or password
                   </span>
                   <i
                     className="fa fa-close "
-                    onClick={() => updateErrorVisible(false)} />
+                    onClick={() => updateErrorVisible(false)}
+                  />
                 </div>
               )}
               <Form>
@@ -213,7 +216,8 @@ const SignInComponent = () => {
                   onClick={e => {
                     e.preventDefault();
                     submitLoginDetailsToApi();
-                  }}>
+                  }}
+                >
                   Sign In
                 </Button>
               </Form>
@@ -235,7 +239,8 @@ const SignInComponent = () => {
                 {...signUpButtonStyle}
                 onClick={() => {
                   navigate('/auth/signup');
-                }}>
+                }}
+              >
                 Create an account
               </Button>
             </div>

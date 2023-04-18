@@ -33,23 +33,27 @@ const Footer = () => {
             <div className="noselect w-auto">
               <a
                 className="noselect me-1 btn btn-social-icon btn-facebook"
-                href="http://www.facebook.com/profile.php?id=">
+                href="http://www.facebook.com/profile.php?id="
+              >
                 <i className="noselect fa fa-facebook" />
               </a>
               <a
                 className="noselect me-1 btn btn-social-icon btn-linkedin"
-                href="http://www.linkedin.com/in/">
+                href="http://www.linkedin.com/in/"
+              >
                 <i className="noselect fa fa-linkedin" />
               </a>
               <a
                 className="noselect me-1 btn btn-social-icon btn-twitter"
-                href="http://twitter.com/">
+                href="http://twitter.com/"
+              >
                 <i className="noselect fa fa-twitter" />
               </a>
 
               <a
                 className="noselect me-1 btn btn-social-icon btn-instagram"
-                href="mailto:">
+                href="mailto:"
+              >
                 <i className="noselect fa fa-instagram" />
               </a>
             </div>
@@ -58,7 +62,8 @@ const Footer = () => {
         <div className="noselect col-12 mt-3 align-items-center justify-content-around">
           <p
             className="noselect mb-0 "
-            style={{color: '#ddd', textAlign: 'center'}}>
+            style={{color: '#ddd', textAlign: 'center'}}
+          >
             © Copyright 2023 Recipe Diary
           </p>
         </div>

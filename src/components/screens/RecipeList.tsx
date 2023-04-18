@@ -109,7 +109,6 @@ const RecipesComponent = (props: any) => {
 
   useEffect(() => {
     if (isFiltersLoaded) {
-      
       updateRecipesLoading(true);
       setTimeout(() => {
         getRecipesFromApi();
@@ -246,7 +245,8 @@ const RecipesComponent = (props: any) => {
       return localRecipes.map((recipe: RecipeListElement, index: number) => (
         <div
           key={index}
-          className={`col-12 col-sm-6 col-lg-4 col-xl-4 mb-3 px-2 `}>
+          className={`col-12 col-sm-6 col-lg-4 col-xl-4 mb-3 px-2 `}
+        >
           <Generic.RecipeCard
             data={recipe}
             index={index}
@@ -311,7 +311,8 @@ const RecipesComponent = (props: any) => {
               // padding: 2,
 
               backgroundColor: '#eee',
-            }}>
+            }}
+          >
             <InputGroup className="col-12 px-2">
               <DebounceInput
                 minLength={2}
@@ -348,7 +349,8 @@ const RecipesComponent = (props: any) => {
                 style={{
                   borderColor: '#eee',
                   backgroundColor: searchHover ? '#1976D2' : 'white',
-                }}>
+                }}
+              >
                 <img
                   className="noselect col-auto"
                   src={searchHover ? icons.search_white : icons.search_black}
@@ -376,7 +378,8 @@ const RecipesComponent = (props: any) => {
                       border: '0.5px solid #ddd',
                       backgroundColor: '#eee',
                       borderRadius: 3,
-                    }}>
+                    }}
+                  >
                     Showing: {recipes.length} of {recipeCount} recipes
                   </em>
                 </div>
@@ -397,7 +400,8 @@ const RecipesComponent = (props: any) => {
                     <p className="col-12" style={{textAlign: 'center'}}>
                       <b>Yay! You have seen it all</b>
                     </p>
-                  }>
+                  }
+                >
                   {localRecipes && loadRecipes(localRecipes)}
                 </InfiniteScroll>
               </div>

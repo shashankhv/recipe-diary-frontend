@@ -30,7 +30,8 @@ const NotFound = () => {
       </span>
       <Button
         className="bg-success my-4"
-        onClick={() => navigate('/main/home')}>
+        onClick={() => navigate('/main/home')}
+      >
         Take Me Home
       </Button>
     </div>

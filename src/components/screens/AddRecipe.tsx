@@ -103,7 +103,7 @@ const AddRecipeComponent = () => {
                 alt="Recipe Diary"
               />
               <span className="noselect col-auto  mb-0 mt-2 align-middle h3 ">
-                {`Add New Recipe`}
+                {"Add New Recipe"}
               </span>
             </div>
             <div className="col-12  mt-3  p-3 ">
@@ -380,7 +380,7 @@ const AddRecipeComponent = () => {
                     <br />
                     <span style={{color: '#4E9F3D'}}>
                       For Best quality poster upload a picture, whose
-                      {` width > 1500px and height > 1080px`}
+                      {" width > 1500px and height > 1080px"}
                     </span>
                   </FormText>
                   <Input

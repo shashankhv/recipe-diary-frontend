@@ -160,7 +160,7 @@ const SignInComponent = () => {
                   </span>
                   <i
                     className="fa fa-close "
-                    onClick={() => updateErrorVisible(false)}></i>
+                    onClick={() => updateErrorVisible(false)} />
                 </div>
               )}
               <Form>

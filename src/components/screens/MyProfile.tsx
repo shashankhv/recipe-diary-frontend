@@ -223,7 +223,7 @@ const MyProfileComponent = (props: any) => {
               {recipes.map((recipe: RecipeListElement, index: number) => (
                 <div
                   key={index}
-                  className={`col-12  col-md-6 col-lg-6 col-xl-4 mb-5 px-3 `}>
+                  className={"col-12  col-md-6 col-lg-6 col-xl-4 mb-5 px-3 "}>
                   <Generic.RecipeCard
                     data={recipe}
                     index={index}

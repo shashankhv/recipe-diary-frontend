@@ -109,7 +109,7 @@ const RecipesComponent = (props: any) => {
 
   useEffect(() => {
     if (isFiltersLoaded) {
-      console.log('here me');
+      
       updateRecipesLoading(true);
       setTimeout(() => {
         getRecipesFromApi();

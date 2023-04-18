@@ -119,7 +119,8 @@ const SignUpComponent = () => {
       <div className="noselect col-12 d-flex flex-row justify-content-center my-5  ">
         <div
           className="noselect col-12 col-sm-10 col-md-10 col-lg-8 col-xl-8 m-2 row"
-          style={isTabletOrMobile ? {} : {border: '1px solid #eee'}}>
+          style={isTabletOrMobile ? {} : {border: '1px solid #eee'}}
+        >
           <div className="col-12 col-md-7">
             <div className="col-12  p-2 ">
               <div className=" mx-5 mt-3 d-flex flex-column align-items-center">
@@ -133,7 +134,7 @@ const SignUpComponent = () => {
                   />
                 )}
                 <span className="noselect col-auto  mb-0 mt-2 align-middle h3 ">
-                  {"Sign Up to Recipe Diary"}
+                  {'Sign Up to Recipe Diary'}
                 </span>
               </div>
               <div className="col-12  mt-3  p-3 ">
@@ -170,7 +171,8 @@ const SignUpComponent = () => {
                           <em
                             className={`text-${
                               usernameAvailableStatus ? 'success' : 'danger'
-                            }`}>
+                            }`}
+                          >
                             <i
                               className={`fa  ${
                                 usernameAvailableStatus
@@ -418,7 +420,8 @@ const SignUpComponent = () => {
                             }
                           });
                       }
-                    }}>
+                    }}
+                  >
                     Sign Up
                   </Button>
                 </Form>

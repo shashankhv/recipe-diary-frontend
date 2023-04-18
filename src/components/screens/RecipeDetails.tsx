@@ -158,7 +158,8 @@ const RecipeDetailsComponent = (props: any) => {
                   style={{
                     backgroundColor: '#78b0f0',
                     color: 'white',
-                  }}>
+                  }}
+                >
                   {course}
                 </p>
                 <p
@@ -166,7 +167,8 @@ const RecipeDetailsComponent = (props: any) => {
                   style={{
                     backgroundColor: '#b278f0',
                     color: 'white',
-                  }}>
+                  }}
+                >
                   {servings} servings
                 </p>
                 <p
@@ -174,7 +176,8 @@ const RecipeDetailsComponent = (props: any) => {
                   style={{
                     backgroundColor: '#f08878',
                     color: 'white',
-                  }}>
+                  }}
+                >
                   {diet}
                 </p>
               </div>
@@ -188,7 +191,8 @@ const RecipeDetailsComponent = (props: any) => {
                         : dispatch(addRecipeToFavorites(recipe_id));
                     }}
                     className="noselect px-4 py-1"
-                    {...buttonHoverStyle}>
+                    {...buttonHoverStyle}
+                  >
                     <span className="noselect ">
                       {isFavorite ? 'Remove bookmark' : 'Add to Bookmarks'}
                     </span>
@@ -215,7 +219,8 @@ const RecipeDetailsComponent = (props: any) => {
                     right: 0,
                     marginTop: 3,
                     padding: 5,
-                  }}>
+                  }}
+                >
                   <img
                     onMouseDown={() => changeMouseStatus(true)}
                     onMouseUp={() => changeMouseStatus(false)}
@@ -237,19 +242,19 @@ const RecipeDetailsComponent = (props: any) => {
             <div className="noselect row  mx-0">
               <div className="noselect  col-4 d-flex flex-column align-items-center p-2 ">
                 <span className="noselect   col-auto  mb-0  ms-1 text-center">
-                  {"Prep Time"}
+                  {'Prep Time'}
                 </span>
                 <strong className="noselect col-auto  mb-0  ms-1 text-center">{` ${prepTimeInMins} min`}</strong>
               </div>
               <div className="noselect  col-4 d-flex flex-column align-items-center p-2 ">
                 <span className="noselect   col-auto  mb-0  ms-1 text-center">
-                  {"Cook Time"}
+                  {'Cook Time'}
                 </span>
                 <strong className="noselect   col-auto  mb-0  ms-1 text-center">{` ${cookTimeInMins} min `}</strong>
               </div>
               <div className="noselect  col-4 d-flex flex-column align-items-center  p-2 ">
                 <span className="noselect   col-auto  mb-0  ms-1 text-center">
-                  {"Total Time"}
+                  {'Total Time'}
                 </span>
                 <strong className="noselect   col-auto  mb-0  ms-1 text-center">
                   {` ${totalTimeInMins} min`}
@@ -265,7 +270,8 @@ const RecipeDetailsComponent = (props: any) => {
                       return (
                         <li
                           key={index}
-                          className="noselect my-3 text-decoration-none list-unstyled">
+                          className="noselect my-3 text-decoration-none list-unstyled"
+                        >
                           {ingredient}
                         </li>
                       );
@@ -274,14 +280,16 @@ const RecipeDetailsComponent = (props: any) => {
               </Col>
               <div
                 className="col-md-1 flex-1 d-flex justify-content-center p-0"
-                style={{width: '1px', backgroundColor: 'white'}}>
+                style={{width: '1px', backgroundColor: 'white'}}
+              >
                 <div
                   style={{
                     // flex: 1,
                     width: 20,
                     height: '100%',
                     backgroundColor: '#eee',
-                  }}></div>
+                  }}
+                ></div>
               </div>
               <Col className="col-12 col-md-7 ps-md-4 ">
                 <h3 className="noselect col-12 mt-5">Instructions</h3>
@@ -291,7 +299,8 @@ const RecipeDetailsComponent = (props: any) => {
                       return (
                         <li
                           key={index}
-                          className="noselect text-decoration-none my-3">
+                          className="noselect text-decoration-none my-3"
+                        >
                           {instruction}
                         </li>
                       );
@@ -307,7 +316,8 @@ const RecipeDetailsComponent = (props: any) => {
     return (
       <div
         className="container"
-        style={{flex: 1, justifyContent: 'center', alignItems: 'center'}}>
+        style={{flex: 1, justifyContent: 'center', alignItems: 'center'}}
+      >
         <p>{recipeError}</p>{' '}
       </div>
     );

@@ -81,7 +81,8 @@ const Generic = {
       <Link
         to={redirect}
         state={{recipeId: data._id}}
-        style={{textDecoration: 'none', color: 'black', height: '100%'}}>
+        style={{textDecoration: 'none', color: 'black', height: '100%'}}
+      >
         <div
           {...cardHoverStlye}
           className="pb-3"
@@ -101,10 +102,12 @@ const Generic = {
                     'Oops! Something went wrong. Could not add this recipe to recents',
                   );
                 });
-          }}>
+          }}
+        >
           <Card
             className="noselect  col-12 col-sm-12 mb-3"
-            style={{height: '100%'}}>
+            style={{height: '100%'}}
+          >
             <CardBody className="noselect p-0">
               {/* eslint-disable-next-line jsx-a11y/img-redundant-alt */}
               <div
@@ -122,14 +125,16 @@ const Generic = {
                   flexDirection: 'column',
                   justifyContent: user ? 'space-between' : 'flex-end',
                   alignItems: 'flex-end',
-                }}>
+                }}
+              >
                 {user && (
                   <div
                     className="noselect  "
                     style={{
                       marginTop: -13,
                       padding: 5,
-                    }}>
+                    }}
+                  >
                     <img
                       onMouseEnter={() => changeMouseStatus(true)}
                       onMouseLeave={() => changeMouseStatus(false)}
@@ -205,7 +210,8 @@ const Generic = {
                 )}
                 <div
                   className="noselect px-2 mb-1 me-1 py-1"
-                  style={{backgroundColor: 'antiquewhite', borderRadius: 50}}>
+                  style={{backgroundColor: 'antiquewhite', borderRadius: 50}}
+                >
                   {totalTimeInMins} min
                 </div>
               </div>
@@ -232,8 +238,9 @@ const Generic = {
           style={{
             height: '100%',
             backgroundColor: color,
-            boxShadow: "0px 0px 10px 3px #ccc",
-          }}>
+            boxShadow: '0px 0px 10px 3px #ccc',
+          }}
+        >
           <CardBody className="noselect p-0  m-0 d-flex flex-column justify-content-end align-items-center">
             {/* eslint-disable-next-line jsx-a11y/img-redundant-alt */}
 
@@ -247,7 +254,8 @@ const Generic = {
                   fontWeight: 'bolder',
                   textAlign: 'center',
                   marginBottom: 20,
-                }}>
+                }}
+              >
                 {title}
               </CardTitle>
               <CardSubtitle
@@ -258,7 +266,8 @@ const Generic = {
                   lineHeight: '18px',
                   fontWeight: 'lighter',
                   textAlign: 'center',
-                }}>
+                }}
+              >
                 {description}
               </CardSubtitle>
             </div>
@@ -285,7 +294,8 @@ const Generic = {
         <span
           onClick={onChange}
           className="text-wrap "
-          style={{cursor: 'pointer'}}>{`  ${label}`}</span>
+          style={{cursor: 'pointer'}}
+        >{`  ${label}`}</span>
       </div>
     );
   },
@@ -294,7 +304,8 @@ const Generic = {
       <div className="container">
         <div
           className="d-flex flex-column justify-content-center align-items-center"
-          style={{height: 600}}>
+          style={{height: 600}}
+        >
           <img src={gifs.loadingGif} style={{width: 80, height: 80}} alt="" />
           <p className="text-center">Loading {text}</p>
         </div>
@@ -305,7 +316,8 @@ const Generic = {
     return (
       <div
         className="container"
-        style={{height: 600, justifyContent: 'center', alignItems: 'center'}}>
+        style={{height: 600, justifyContent: 'center', alignItems: 'center'}}
+      >
         <Row className="justify-content-center">
           <p className="text-center">Error {error}</p>
         </Row>

@@ -27,7 +27,7 @@ const FormValidators = {
     if (!required(value)) {
       error = 'Required!';
     } else if (!isNumber(value)) {
-      error = "Should be a positive number greater than zero";
+      error = 'Should be a positive number greater than zero';
     }
     return [error, error.length > 0];
   },
@@ -69,7 +69,7 @@ const FormValidators = {
     } else if (!maxLength(value, maxLen)) {
       error = `Should be at most ${maxLen + 1} characters!`;
     } else if (value !== matchTo) {
-      error = "Passwords dont match!";
+      error = 'Passwords dont match!';
     }
     return [error, error.length > 0];
   },

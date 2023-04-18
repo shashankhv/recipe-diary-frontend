@@ -139,7 +139,7 @@ const SignInComponent = () => {
                 alt="Recipe Diary"
               />
               <span className="noselect col-auto  mb-0 mt-2 align-middle h3 ">
-                {`Sign in to Recipe Diary`}
+                {"Sign in to Recipe Diary"}
               </span>
             </div>
             <div className="col-12  mt-3  p-3 ">
@@ -220,7 +220,7 @@ const SignInComponent = () => {
             </div>
             <div className="d-flex flex-row align-items-center my-3">
               <div style={{flex: 1}} className="border-bottom" />
-              <span className="mx-2">{` or `}</span>
+              <span className="mx-2">{" or "}</span>
               <div style={{flex: 1}} className="border-bottom" />
             </div>
 

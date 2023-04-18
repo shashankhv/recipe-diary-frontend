@@ -246,7 +246,7 @@ const RecipesComponent = (props: any) => {
       return localRecipes.map((recipe: RecipeListElement, index: number) => (
         <div
           key={index}
-          className={`col-12 col-sm-6 col-lg-4 col-xl-4 mb-3 px-2 `}>
+          className={"col-12 col-sm-6 col-lg-4 col-xl-4 mb-3 px-2 "}>
           <Generic.RecipeCard
             data={recipe}
             index={index}

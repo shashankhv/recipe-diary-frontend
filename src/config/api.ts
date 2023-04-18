@@ -21,7 +21,7 @@ ApiCaller.interceptors.request.use(async function (config: any) {
 const recipeApiList = {
   getAllRecipes: (params: any) => {
     return ApiCaller({
-      url: `/recipes`,
+      url: "/recipes",
       method: 'get',
       params,
     });
@@ -43,14 +43,14 @@ const recipeApiList = {
 
   getRecipeFilters: () => {
     return ApiCaller({
-      url: `/recipes/filters`,
+      url: "/recipes/filters",
       method: 'get',
     });
   },
 
   postRecipeImage: (data: any, params: any) => {
     return ApiCaller({
-      url: `/uploads/recipe`,
+      url: "/uploads/recipe",
       method: 'post',
       data,
       params,
@@ -59,7 +59,7 @@ const recipeApiList = {
 
   postRecipe: (data: any) => {
     return ApiCaller({
-      url: `/recipes`,
+      url: "/recipes",
       method: 'post',
       data,
     });
@@ -69,7 +69,7 @@ const recipeApiList = {
 const userApiList = {
   login: (payload: any) => {
     return ApiCaller({
-      url: `/users/login`,
+      url: "/users/login",
       method: 'post',
       data: payload,
     });
@@ -77,7 +77,7 @@ const userApiList = {
 
   signup: (payload: any) => {
     return ApiCaller({
-      url: `/users/signup`,
+      url: "/users/signup",
       method: 'post',
       data: payload,
     });
@@ -85,7 +85,7 @@ const userApiList = {
 
   usernameCheck: (payload: any) => {
     return ApiCaller({
-      url: `/users/usernameCheck`,
+      url: "/users/usernameCheck",
       method: 'post',
       data: payload,
     });
@@ -93,20 +93,20 @@ const userApiList = {
 
   getUserDetails: () => {
     return ApiCaller({
-      url: `/users/userDetails`,
+      url: "/users/userDetails",
       method: 'get',
     });
   },
   getRecipesByCategory: (params: any) => {
     return ApiCaller({
-      url: `/users/category`,
+      url: "/users/category",
       method: 'get',
       params,
     });
   },
   postToCategory: (payload: any) => {
     return ApiCaller({
-      url: `/users/category`,
+      url: "/users/category",
       method: 'post',
       data: payload,
     });
@@ -114,7 +114,7 @@ const userApiList = {
 
   deleteFromCategory: (payload: any) => {
     return ApiCaller({
-      url: `/users/category`,
+      url: "/users/category",
       method: 'delete',
       data: payload,
     });
@@ -122,7 +122,7 @@ const userApiList = {
 
   postVerifyUser: (payload: any) => {
     return ApiCaller({
-      url: `/users/verifyUser`,
+      url: "/users/verifyUser",
       method: 'post',
       // data: payload,
     });
@@ -132,7 +132,7 @@ const userApiList = {
 const apiDefault = {
   checkServerConnection: () => {
     return ApiCaller({
-      url: `/checkConnection`,
+      url: "/checkConnection",
       method: 'get',
     });
   },

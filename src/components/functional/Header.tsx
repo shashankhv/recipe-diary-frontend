@@ -254,7 +254,7 @@ const Header = ({modalCallback}: any) => {
                       navigate('/auth/signin');
                     }}
                     {...signInButtonStyle}>
-                    <span className="noselect">{` Sign In`}</span>
+                    <span className="noselect">{" Sign In"}</span>
                   </Button>
                 </NavItem>
               )}

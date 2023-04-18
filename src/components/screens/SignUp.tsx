@@ -133,7 +133,7 @@ const SignUpComponent = () => {
                   />
                 )}
                 <span className="noselect col-auto  mb-0 mt-2 align-middle h3 ">
-                  {`Sign Up to Recipe Diary`}
+                  {"Sign Up to Recipe Diary"}
                 </span>
               </div>
               <div className="col-12  mt-3  p-3 ">

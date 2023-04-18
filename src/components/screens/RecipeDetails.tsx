@@ -237,19 +237,19 @@ const RecipeDetailsComponent = (props: any) => {
             <div className="noselect row  mx-0">
               <div className="noselect  col-4 d-flex flex-column align-items-center p-2 ">
                 <span className="noselect   col-auto  mb-0  ms-1 text-center">
-                  {`Prep Time`}
+                  {"Prep Time"}
                 </span>
                 <strong className="noselect col-auto  mb-0  ms-1 text-center">{` ${prepTimeInMins} min`}</strong>
               </div>
               <div className="noselect  col-4 d-flex flex-column align-items-center p-2 ">
                 <span className="noselect   col-auto  mb-0  ms-1 text-center">
-                  {`Cook Time`}
+                  {"Cook Time"}
                 </span>
                 <strong className="noselect   col-auto  mb-0  ms-1 text-center">{` ${cookTimeInMins} min `}</strong>
               </div>
               <div className="noselect  col-4 d-flex flex-column align-items-center  p-2 ">
                 <span className="noselect   col-auto  mb-0  ms-1 text-center">
-                  {`Total Time`}
+                  {"Total Time"}
                 </span>
                 <strong className="noselect   col-auto  mb-0  ms-1 text-center">
                   {` ${totalTimeInMins} min`}

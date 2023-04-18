@@ -232,7 +232,7 @@ const Generic = {
           style={{
             height: '100%',
             backgroundColor: color,
-            boxShadow: `0px 0px 10px 3px #ccc`,
+            boxShadow: "0px 0px 10px 3px #ccc",
           }}>
           <CardBody className="noselect p-0  m-0 d-flex flex-column justify-content-end align-items-center">
             {/* eslint-disable-next-line jsx-a11y/img-redundant-alt */}

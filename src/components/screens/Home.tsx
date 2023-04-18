@@ -91,7 +91,7 @@ const HomeComponent = (props: any) => {
       return <Generic.Spinner text={'recipes'} />;
     } else if (!recipeLoading && localRecipes) {
       return localRecipes.map((special: RecipeListElement, index: number) => (
-        <div key={index} className={`col-12  col-sm-6 col-lg-4 px-3 mb-3 `}>
+        <div key={index} className={"col-12  col-sm-6 col-lg-4 px-3 mb-3 "}>
           {/* <Animate
             play={showSpecials}
             start={{opacity: 0, marginTop: 100}}

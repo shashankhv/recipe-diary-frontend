@@ -1,5 +1,5 @@
 import axios from 'axios';
-export const baseURL = 'https://recipe-diary-backend.onrender.com';
+export const baseURL = 'https://evening-reaches-62417-73f9515a32e5.herokuapp.com/';
 
 const headers = {
   Accept: 'application/json',

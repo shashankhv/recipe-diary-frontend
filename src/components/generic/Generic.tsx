@@ -272,7 +272,7 @@ const Generic = {
     const {label, value, onChange} = checkboxProps;
     return (
       <div className="noselect d-flex justify-content-start align-items-start text-wrap col-12">
-        <input
+        <input 
           type="checkbox"
           checked={value}
           onChange={onChange}

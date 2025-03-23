@@ -1,0 +1,41 @@
+{
+  "files": {
+    "main.css": "/recipe-diary-frontend/static/css/main.c79b4441.css",
+    "main.js": "/recipe-diary-frontend/static/js/main.5bdb1baf.js",
+    "static/js/787.4c716134.chunk.js": "/recipe-diary-frontend/static/js/787.4c716134.chunk.js",
+    "static/media/center-food-3.png": "/recipe-diary-frontend/static/media/center-food-3.21fe889ff7e1da8aed4c.png",
+    "static/media/server-down.jpg": "/recipe-diary-frontend/static/media/server-down.663b0905a252be9d2500.jpg",
+    "static/media/center-food-1.png": "/recipe-diary-frontend/static/media/center-food-1.95de47e2350efb74e9b7.png",
+    "static/media/food-background-1.jpg": "/recipe-diary-frontend/static/media/food-background-1.c4dc8fb4298fe8d2e5d1.jpg",
+    "static/media/center-food-2.png": "/recipe-diary-frontend/static/media/center-food-2.a9a8e9abc8b2e17b8243.png",
+    "static/media/d-4.png": "/recipe-diary-frontend/static/media/d-4.302f68c8c287459dfbb0.png",
+    "static/media/center-food.png": "/recipe-diary-frontend/static/media/center-food.55ac01b665df84b8b768.png",
+    "static/media/d-3.png": "/recipe-diary-frontend/static/media/d-3.3cebc489271759aaabae.png",
+    "static/media/d-2.png": "/recipe-diary-frontend/static/media/d-2.ff9d84b6f2fe5b150192.png",
+    "static/media/center-food-4.png": "/recipe-diary-frontend/static/media/center-food-4.8fe8e1940df047f303ed.png",
+    "static/media/d-1.png": "/recipe-diary-frontend/static/media/d-1.6989d15e5bda473c1c4b.png",
+    "static/media/fontawesome-webfont.svg?v=4.7.0": "/recipe-diary-frontend/static/media/fontawesome-webfont.c1e38fd9e0e74ba58f7a.svg",
+    "static/media/fontawesome-webfont.eot": "/recipe-diary-frontend/static/media/fontawesome-webfont.8b43027f47b20503057d.eot",
+    "static/media/fontawesome-webfont.ttf?v=4.7.0": "/recipe-diary-frontend/static/media/fontawesome-webfont.1e59d2330b4c6deb84b3.ttf",
+    "static/media/fontawesome-webfont.woff?v=4.7.0": "/recipe-diary-frontend/static/media/fontawesome-webfont.f691f37e57f04c152e23.woff",
+    "static/media/fontawesome-webfont.woff2?v=4.7.0": "/recipe-diary-frontend/static/media/fontawesome-webfont.20fd1704ea223900efa9.woff2",
+    "static/media/loader.gif": "/recipe-diary-frontend/static/media/loader.0fbaebcb3dcba0cfcc43.gif",
+    "static/media/404-error.png": "/recipe-diary-frontend/static/media/404-error.29fb0966d6ce490a8b11.png",
+    "static/media/no_internet.png": "/recipe-diary-frontend/static/media/no_internet.4b8a2ad8199d6f09a5ff.png",
+    "static/media/app_logo.png": "/recipe-diary-frontend/static/media/app_logo.863b3e6e48ca82cb4918.png",
+    "static/media/search_white.png": "/recipe-diary-frontend/static/media/search_white.49bff6bb7b09d7d436ee.png",
+    "static/media/bookmark_selected.png": "/recipe-diary-frontend/static/media/bookmark_selected.edeb37c558bd0dde480e.png",
+    "static/media/bookmark_unselected.png": "/recipe-diary-frontend/static/media/bookmark_unselected.54541862ef8e8c61511c.png",
+    "static/media/bookmark_hover.png": "/recipe-diary-frontend/static/media/bookmark_hover.7798c5a897f4da56d6bd.png",
+    "static/media/search_black.png": "/recipe-diary-frontend/static/media/search_black.ba5920ba58a32d65f525.png",
+    "static/media/loader.svg": "/recipe-diary-frontend/static/media/loader.20a032193282e842a5171692f26f991f.svg",
+    "index.html": "/recipe-diary-frontend/index.html",
+    "main.c79b4441.css.map": "/recipe-diary-frontend/static/css/main.c79b4441.css.map",
+    "main.5bdb1baf.js.map": "/recipe-diary-frontend/static/js/main.5bdb1baf.js.map",
+    "787.4c716134.chunk.js.map": "/recipe-diary-frontend/static/js/787.4c716134.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c79b4441.css",
+    "static/js/main.5bdb1baf.js"
+  ]
+}

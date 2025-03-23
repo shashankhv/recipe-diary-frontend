@@ -29,7 +29,7 @@ import {images} from '../../config/configuration';
 import {useMediaQuery} from 'react-responsive';
 import {homeCards, homeCards2} from '../../config/dataset';
 import classNames from 'classnames';
-import foodimage from '../../assets/images/center-food.png'
+import foodimage from '../../assets/images/center-food.png';
 const HomeComponent = (props: any) => {
   const {pathDetails} = props;
   const dispatch: Dispatch<any> = useDispatch();
@@ -110,7 +110,8 @@ const HomeComponent = (props: any) => {
       return (
         <div
           className="container"
-          style={{flex: 1, justifyContent: 'center', alignItems: 'center'}}>
+          style={{flex: 1, justifyContent: 'center', alignItems: 'center'}}
+        >
           <p>
             {
               'Oops! Looks like something went wrong. Please refresh the page so we can try and fetch the information you are looking for.'
@@ -122,10 +123,7 @@ const HomeComponent = (props: any) => {
   };
 
   var localRecipes = recipes;
-  if (
-    user &&
-    user.favorites.hasOwnProperty('recipes')
-  ) {
+  if (user && user.favorites.hasOwnProperty('recipes')) {
     const favoriteRecipes = user.favorites.recipes;
     localRecipes =
       localRecipes &&
@@ -158,10 +156,12 @@ const HomeComponent = (props: any) => {
           backgroundPosition: 'center',
           height: '80vh',
         }}
-        className="noselect bg-image shadow-5-strong col-12">
+        className="noselect bg-image shadow-5-strong col-12"
+      >
         <div
           className="noselect mask  col-12"
-          style={{backgroundColor: 'rgba(0, 0, 0, 0.85)', height: '80vh'}}>
+          style={{backgroundColor: 'rgba(0, 0, 0, 0.85)', height: '80vh'}}
+        >
           <div className="noselect container d-flex align-items-center justify-content-center text-center h-100">
             <div className="noselect text-white">
               <h1
@@ -170,19 +170,22 @@ const HomeComponent = (props: any) => {
                   fontFamily: 'Kaushan Script',
                   fontWeight: 400,
                   fontSize: 46,
-                }}>
+                }}
+              >
                 Learn Healthy and Tasty Recipes
               </h1>
               <h5 className="noselect mb-4">Classic Recipes for Home Cooks</h5>
 
               <div
                 className="noselect btn btn-outline-light btn-lg m-2"
-                onClick={() => navigate('/main/recipes')}>
+                onClick={() => navigate('/main/recipes')}
+              >
                 Explore Recipes
               </div>
               <div
                 className="noselect btn btn-outline-light btn-lg m-2"
-                onClick={() => scrollTo(refToSpecialsUsingSmoothScroll)}>
+                onClick={() => scrollTo(refToSpecialsUsingSmoothScroll)}
+              >
                 Today's specials
               </div>
             </div>
@@ -217,31 +220,35 @@ const HomeComponent = (props: any) => {
             <img
               className="img-fluid d-none d-lg-block"
               src={foodimage}
-              alt='Hello'
+              alt="Hello"
             />
           </div>
           <div className="d-flex flex-column justify-content-between align-items-end col-sm-4 col-lg-3 py-5 ">
             <p className="text-end pb-1 pe-3 p-0 position-relative m-0">
               <p
                 className="h1 fw-bold"
-                style={{width: '150%', transform: 'translate(-35%, 0%'}}>
+                style={{width: '150%', transform: 'translate(-35%, 0%'}}
+              >
                 {homeCards2[2].title}
               </p>
               <p
                 className="m-0"
-                style={{width: '130%', transform: 'translate(-25%, 0%'}}>
+                style={{width: '130%', transform: 'translate(-25%, 0%'}}
+              >
                 {homeCards2[2].description}
               </p>
             </p>
             <p className="text-end pt-1 pe-3 p-0 position-relative m-0">
               <p
                 className="h1 fw-bold"
-                style={{width: '150%', transform: 'translate(-35%, 0%'}}>
+                style={{width: '150%', transform: 'translate(-35%, 0%'}}
+              >
                 {homeCards2[3].title}
               </p>
               <p
                 className="m-0"
-                style={{width: '140%', transform: 'translate(-30%, 0%'}}>
+                style={{width: '140%', transform: 'translate(-30%, 0%'}}
+              >
                 {homeCards2[3].description}
               </p>
             </p>
@@ -257,7 +264,8 @@ const HomeComponent = (props: any) => {
                 )}
                 style={{
                   flexDirection: index % 2 === 0 ? 'row' : 'row-reverse',
-                }}>
+                }}
+              >
                 <img
                   src={elem.image}
                   alt="i"
@@ -274,14 +282,16 @@ const HomeComponent = (props: any) => {
                     className={classNames(
                       'h1 fw-bold text-center',
                       index % 2 === 0 ? 'text-sm-start' : 'text-sm-end',
-                    )}>
+                    )}
+                  >
                     {elem.title}
                   </p>
                   <p
                     className={classNames(
                       'm-0  text-center text-center',
                       index % 2 == 0 ? 'text-sm-start' : 'text-sm-end',
-                    )}>
+                    )}
+                  >
                     {elem.description}
                   </p>
                 </div>
@@ -326,12 +336,14 @@ const HomeComponent = (props: any) => {
       <div className="noselect container pt-5">
         <h1
           className="noselect text-center mb-5"
-          ref={refToSpecialsUsingSmoothScroll}>
+          ref={refToSpecialsUsingSmoothScroll}
+        >
           Todays Specials
         </h1>
         <div
           className="noselect d-flex flex-row flex-wrap"
-          ref={refToAnimateUsingViewport}>
+          ref={refToAnimateUsingViewport}
+        >
           {/* <AnimateGroup play={showSpecials}> */}
           {loadRecipes(localRecipes)}
           {/* </AnimateGroup> */}

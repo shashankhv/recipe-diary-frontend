@@ -3,5 +3,5 @@ import react from '@vitejs/plugin-react';
 
 export default defineConfig({
   plugins: [react()],
-  base : 'https://shashankhv.github.io/recipe-diary-frontend/'
+  base : '/recipe-diary-frontend/'
 });

@@ -1,6 +1,5 @@
 import axios from 'axios';
-const BASE_URL = import.meta.env.VITE_API_URL;
-export const baseURL = BASE_URL
+export const baseURL = "https://evening-reaches-62417-73f9515a32e5.herokuapp.com/"
 
 const headers = {
   Accept: 'application/json',

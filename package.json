@@ -1,6 +1,6 @@
 {
   "name": "recipe-diary",
-  "homepage": "https://eliterudy.github.io/recipe-diary-frontend/",
+  "homepage": "https://shashankhv.github.io/recipe-diary-frontend/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -45,7 +45,9 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+     "predeploy": "vite build",
+  "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [

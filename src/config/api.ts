@@ -1,5 +1,6 @@
 import axios from 'axios';
-export const baseURL = process.env.URL;
+const BASE_URL = import.meta.env.VITE_API_URL;
+export const baseURL = BASE_URL
 
 const headers = {
   Accept: 'application/json',

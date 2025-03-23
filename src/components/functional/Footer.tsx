@@ -4,7 +4,7 @@ import {Link} from 'react-router-dom';
 const Footer = () => {
   return (
     <div className="noselect footer">
-      <div className="noselect m-4 mb-0 container">
+      <div className="noselect m-4 mb-0 w-full">
         <div className="noselect row justify-content-center align-items-center col-12">
           <div className="noselect col-12 col-sm-8 align-items-center ">
             <p className="h5 text-white m-0">Quick Links</p>

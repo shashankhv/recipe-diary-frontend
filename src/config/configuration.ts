@@ -13,7 +13,6 @@ import food_background from '../assets/images/food-background-1.jpg';
 import loadingGif from '../assets/gifs/loader.gif';
 import loadingSVG from '../assets/gifs/loader.svg';
 
-
 const colorCodes: Object = {
   default: '#151f2d',
 };
@@ -68,4 +67,3 @@ const randomColorGenerator: any = () => {
 };
 
 export {colorCodes, icons, randomColorGenerator, images, gifs, svgs};
-

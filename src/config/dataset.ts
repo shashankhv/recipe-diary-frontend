@@ -30,8 +30,7 @@ export const homeCards = [
   {
     id: 2,
     title: 'Pick a course of your liking',
-    description:
-      'Cooking can be a stress-reliever...',
+    description: 'Cooking can be a stress-reliever...',
     link: '',
     image: d3,
     color: '#f2e8cf',
@@ -39,8 +38,7 @@ export const homeCards = [
   {
     id: 3,
     title: 'Food for everyone',
-    description:
-      "Elevate your home cooking game...",
+    description: 'Elevate your home cooking game...',
     link: '',
     image: d4,
     color: '#f28482',
@@ -51,32 +49,28 @@ export const homeCards2 = [
   {
     id: 0,
     title: 'Appetizers',
-    description:
-      'Excite your palate with our irresistible appetizers...',
+    description: 'Excite your palate with our irresistible appetizers...',
     link: '',
     image: cf1,
   },
   {
     id: 1,
     title: 'Main Courses',
-    description:
-      'Experience the art of flavor in every forkful...',
+    description: 'Experience the art of flavor in every forkful...',
     link: '',
     image: cf2,
   },
   {
     id: 2,
     title: 'Vegan food',
-    description:
-      'Eat green, feel great...',
+    description: 'Eat green, feel great...',
     link: '',
     image: cf3,
   },
   {
     id: 3,
     title: 'Deserts',
-    description:
-      'Indulge in a moment of sweetness...',
+    description: 'Indulge in a moment of sweetness...',
     link: '',
     image: cf4,
   },

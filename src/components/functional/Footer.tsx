@@ -55,11 +55,11 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="noselect col-12 mt-3 align-items-center justify-content-around">
+        <div className="noselect col-12 mt-3 align-items-end justify-content-around">
           <p
             className="noselect mb-0 "
-            style={{color: '#ddd', textAlign: 'center'}}>
-            © Copyright 2023 Recipe Diary
+            style={{color: '#ddd', textAlign: 'end'}}>
+            © Copyright 2025 Recipe Diary
           </p>
         </div>
       </div>

@@ -75,7 +75,8 @@ const NoInternet = () => {
               'Server is not up yet! Please try again later or in a few minutes',
             );
           }
-        }}>
+        }}
+      >
         TRY AGAIN
       </Button>
     </div>

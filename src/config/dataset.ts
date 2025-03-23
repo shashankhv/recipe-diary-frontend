@@ -1,39 +1,48 @@
+import d1 from '../assets/images/d-1.png';
+import d2 from '../assets/images/d-2.png';
+import d3 from '../assets/images/d-3.png';
+import d4 from '../assets/images/d-4.png';
+
+import cf1 from '../assets/images/center-food-1.png';
+import cf2 from '../assets/images/center-food-2.png';
+import cf3 from '../assets/images/center-food-3.png';
+import cf4 from '../assets/images/center-food-4.png';
+
 export const homeCards = [
   {
     id: 0,
     title: 'Over 1000 recipes',
     description:
-      "Don't be intimidated by cooking - everyone starts somewhere. With practice and patience, you can become a confident and skilled home cook.",
+      "Don't be intimidated by cooking - everyone starts somewhere...",
     link: '',
-    image: require('../assets/images/d-1.png'),
+    image: d1,
     color: '#f6bd60',
   },
   {
     id: 1,
     title: 'Several cuisines to choose from',
     description:
-      'By cooking at home, you can reduce your environmental impact by using locally sourced ingredients and minimizing food waste.',
+      'By cooking at home, you can reduce your environmental impact...',
     link: '',
-    image: require('../assets/images/d-2.png'),
+    image: d2,
     color: '#f5cac3',
   },
   {
     id: 2,
     title: 'Pick a course of your liking',
     description:
-      'Cooking can be a stress-reliever - getting lost in the process of chopping, stirring, and simmering can help clear your mind and relax your body.',
+      'Cooking can be a stress-reliever...',
     link: '',
-    image: require('../assets/images/d-3.png'),
+    image: d3,
     color: '#f2e8cf',
   },
   {
     id: 3,
     title: 'Food for everyone',
     description:
-      "Elevate your home cooking game by learning new techniques and recipes - you'll be amazed at what you can achieve in your own kitchen.",
+      "Elevate your home cooking game...",
     link: '',
-    image: require('../assets/images/d-4.png'),
-
+    image: d4,
     color: '#f28482',
   },
 ];
@@ -43,32 +52,32 @@ export const homeCards2 = [
     id: 0,
     title: 'Appetizers',
     description:
-      'Excite your palate with our irresistible appetizers - the perfect prelude to a delicious meal.',
+      'Excite your palate with our irresistible appetizers...',
     link: '',
-    image: require('../assets/images/center-food-1.png'),
+    image: cf1,
   },
   {
     id: 1,
     title: 'Main Courses',
     description:
-      'Experience the art of flavor in every forkful of our mouthwatering main courses.',
+      'Experience the art of flavor in every forkful...',
     link: '',
-    image: require('../assets/images/center-food-2.png'),
+    image: cf2,
   },
   {
     id: 2,
     title: 'Vegan food',
     description:
-      'Eat green, feel great - our vegan menu is a delicious way to nourish your body and the planet.',
+      'Eat green, feel great...',
     link: '',
-    image: require('../assets/images/center-food-3.png'),
+    image: cf3,
   },
   {
     id: 3,
     title: 'Deserts',
     description:
-      'Indulge in a moment of sweetness with our heavenly desserts - the perfect finale to any dining experience.',
+      'Indulge in a moment of sweetness...',
     link: '',
-    image: require('../assets/images/center-food-4.png'),
+    image: cf4,
   },
 ];

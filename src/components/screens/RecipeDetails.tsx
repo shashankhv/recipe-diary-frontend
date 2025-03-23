@@ -91,7 +91,6 @@ const RecipeDetailsComponent = (props: any) => {
     var localRecipeDetails: RecipeDetails = recipeDetails;
     if (
       user &&
-      user.favorites !== {} &&
       user.favorites.hasOwnProperty('recipes')
     ) {
       const favoriteRecipes = user.favorites.recipes;

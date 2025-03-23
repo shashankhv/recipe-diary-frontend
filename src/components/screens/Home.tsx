@@ -29,7 +29,7 @@ import {images} from '../../config/configuration';
 import {useMediaQuery} from 'react-responsive';
 import {homeCards, homeCards2} from '../../config/dataset';
 import classNames from 'classnames';
-
+import foodimage from '../../assets/images/center-food.png'
 const HomeComponent = (props: any) => {
   const {pathDetails} = props;
   const dispatch: Dispatch<any> = useDispatch();
@@ -124,7 +124,6 @@ const HomeComponent = (props: any) => {
   var localRecipes = recipes;
   if (
     user &&
-    user.favorites !== {} &&
     user.favorites.hasOwnProperty('recipes')
   ) {
     const favoriteRecipes = user.favorites.recipes;
@@ -217,7 +216,8 @@ const HomeComponent = (props: any) => {
           <div className="d-flex justify-content-center align-items-center col-sm-4 col-lg-6">
             <img
               className="img-fluid d-none d-lg-block"
-              src={require('../../assets/images/center-food.png')}
+              src={foodimage}
+              alt='Hello'
             />
           </div>
           <div className="d-flex flex-column justify-content-between align-items-end col-sm-4 col-lg-3 py-5 ">
